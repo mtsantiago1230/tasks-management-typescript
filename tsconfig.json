@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    // Versión de JavaScript a la que compilar
+    "target": "ES2020",
+    
+    // Sistema de módulos a usar
+    "module": "commonjs",
+    
+    // Carpeta donde se guardarán los archivos compilados
+    "outDir": "./dist",
+    
+    // Carpeta raíz del proyecto
+    "rootDir": "./src",
+    
+    // Habilitar todas las opciones estrictas para mejor calidad de código
+    "strict": true,
+    
+    // Verificar que los tipos están correctos
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    
+    // Permitir decoradores (útil para futuras expansiones)
+    "experimentalDecorators": true,
+    
+    // Generar archivos de declaración de tipos
+    "declaration": true,
+    
+    // Permitir importar módulos desde node_modules
+    "moduleResolution": "node",
+    
+    // Permitir importar archivos JSON
+    "resolveJsonModule": true,
+    
+    // Habilitar source maps para debugging
+    "sourceMap": true,
+    
+    // Incluir archivos de definición de tipos
+    "types": ["node", "jest"]
+  },
+  
+  // Archivos a incluir en la compilación
+  "include": [
+    "src/**/*"
+  ],
+  
+  // Archivos a excluir
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "src/examples/**/*"
+  ]
+} 
